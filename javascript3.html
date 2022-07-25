@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>calculator</title>
+        <script>
+            function pinktheme()
+            {
+                document.bgColor="pink";
+            }
+            function redtheme()
+            {
+                document.bgColor="red";
+            }
+            function bluetheme()
+            {
+                document.bgColor="blue";
+            }
+           function add()
+           {
+                const num1=txt1.value;
+                const num2=txt2.value;
+                const sum=num1+num2;
+                txt3.value=sum;
+           }
+        </script>
+    </head>
+    <body>
+        <div>
+            <input type="button" onclick="pinktheme()"; width="100px" height="100px" style="background-color: pink;" />
+            <input type="button" onclick="redtheme()"; width="100px" height="100px" style="background-color: red;" />
+            <input type="button" onclick="bluetheme()"; width="100px" height="100px" style="background-color: blue;" />
+            <br>
+
+            
+            Enter Number : <input type="text" height="100px" width="100px" id="txt1">
+            <br>
+            Enter Number : <input type="text" height="100px" width="100px" id="txt2">
+            <br>
+            Ans: <input type="text" height="100px" width="100px" id="txt3" readonly>
+            <input type="button" id="add" value="+" onclick="add()";>
+
+
+        </div>
+        <div>
+            
+            <input type="text" value="0" width="200px" id="textAns" style="color:blue";/>
+            <br><br>
+            <input type="button" id="bt1" onclick="add()" value="+" style="background-color: lightgreen;" />
+            <input type="button" id="bt1" onclick="sub()" value="-" style="background-color: lightcoral;"/>
+            <input type="button" id="bt1" onclick="mul()" value="*" style="background-color: brown;" />
+            <input type="button" id="bt1" onclick="div()" value="/" style="background-color: lavender;"  />
+        </div>
+        <hr>
+        
+        
+        <hr/>
+
+    </body>
+</html>    
