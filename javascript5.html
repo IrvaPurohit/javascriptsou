@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>calculator</title>
+    <script>
+        function pinktheme() {
+            document.bgColor = "pink";
+        }
+
+        function redtheme() {
+            document.bgColor = "red";
+        }
+
+        function bluetheme() {
+            document.bgColor = "blue";
+        }
+
+        function add() {
+            const num1 = parseInt(txt1.value);
+            const num2 = parseInt(txt2.value);
+            const sum = num1 + num2;
+            txt3.value = sum;
+            alert(sum)
+        }
+
+        function sub() {
+            const num1 = parseInt(txt1.value);
+            const num2 = parseInt(txt2.value);
+            const sum = num1 - num2;
+            txt3.value = sum;
+            alert(sum)
+        }
+
+        function multi() {
+            const num1 = parseInt(txt1.value);
+            const num2 = parseInt(txt2.value);
+            const sum = num1 * num2;
+            txt3.value = sum;
+            alert(sum)
+        }
+
+        function div() {
+            const num1 = parseInt(txt1.value);
+            const num2 = parseInt(txt2.value);
+            const sum = num1 / num2;
+            txt3.value = sum;
+            alert(sum)
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <input type="button" onclick="pinktheme()" ; width="100px" height="100px" style="background-color: pink;" />
+        <input type="button" onclick="redtheme()" ; width="100px" height="100px" style="background-color: red;" />
+    </div>
+</body>
+</html>    
